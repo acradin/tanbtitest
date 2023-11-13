@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>탄BTI Test</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="start-container">
+    <div class="start-content">
+      <img src="background_9yong.jpg" alt="Test Image" id="startImage">
+      <p class="start-text">
+		나의 탄소배출 유형은?  
+	  </p>
+	  <p class="start-title">
+		탄BTI  
+	  </p>
+	  <button type="button" id="startButton" onclick="startTest()">테스트 시작!</button>
+    </div>
+  </div>
+	
+  <div class="main-container">
+  <h1 id="pageTitle">탄BTI</h1>
+  <div class="container mt-5">
+    <form id="mbti-form">
+      <div class="form-group" id="questionSection">
+        <!-- Questions and options will be dynamically inserted here -->
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+  <div id="result" class="mt-4" style="display: none;">
+    <div class="result-content">
+	  <h2 class="result-text"></h2>
+      <p class="explanation"></p>
+	  <p class="detail"></p>
+    </div>
+  </div>
+  <img src="9yong.png" alt="Test Image" id="resultImage">
+
+  <script src="script.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

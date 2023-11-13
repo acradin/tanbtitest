@@ -1,0 +1,197 @@
+@font-face {
+  font-family : 'macaron';
+  src : url(DXMacaron2-KSCpc-EUC-H.ttf);
+}
+
+@font-face {
+    font-family: 'HakgyoansimWoojuR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: #fef08d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.results-displayed {
+  background-color: #a6e3ca; /* Change to your desired background color */
+}
+
+.main-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center; /* Center text within the container */
+  width: 50rem;
+  height: 30rem;
+}
+
+h2 {
+  font-family: 'macaron';
+  color: #fef08d;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+h3 {
+  font-family: 'macaron';
+  color: #000;
+}
+
+p {
+  color: #6c757d;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.result-content {
+  flex: 1;
+}
+
+.result-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.explanation {
+  font-family:"HakgyoansimWoojuR";
+  font-size: 24px;
+  margin: 10px auto;
+  max-width: 600px;
+  color:#000;
+}
+
+.detail {
+	margin-bottom:5rem;
+}
+
+/* Option buttons styled using flexbox */
+.option-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-btn {
+  font-family:"HakgyoansimWoojuR";
+  color:#000;
+  font-size:24px;
+  width: 80%;
+  margin-top: 1.8rem; /* Adjust the margin to increase or decrease space between buttons */
+  height: 5rem;
+  border-radius: 10px;
+  background-color: #a6e3ca;
+}
+
+.start-container {
+  text-align: center;
+}
+
+.start-content {
+  position: relative;
+}
+
+.start-text {
+  font-family:"macaron";
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size:36px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.start-title {
+  font-family:"macaron";
+  color: #FA99D5;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size:84px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#startButton {
+  font-family:"macaron";
+  position: absolute;
+  font-size:24px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius:20px;
+  background-color:#fef08d;
+  color:black;
+  height:6rem;
+  width:20rem;
+}
+
+#startButton:hover {
+	background-color:#fff;
+}
+
+#startImage {
+  max-height: 100%;
+}
+
+/* Align vertically using flexbox */
+#questionSection {
+  display: flex;
+  font-family: "HakgyoansimWoojuR";
+  color:#000;
+  font-size:24px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pageTitle {
+  font-family:"macaron";
+  color: #FA99D5;
+  font-size:64px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#result {
+	display: flex;
+	align-items: center;
+	padding:20px;
+	width:60rem;
+	height:30rem;
+	border-radius: 10px;
+	background-color: #fff;
+	position: relative;
+}
+
+#resultImage {
+  display: none;
+  max-width: 100%;
+  max-height: 500px; /* Adjust the max height as needed */
+  margin-left: 20px; /* Adjust the margin as needed */
+  position: relative;
+  right: 5rem;
+  top: 10rem;
+}
